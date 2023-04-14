@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+    <script>
+        var anoAtual = 0
+        var anoNasc = 0
+        do {
+            anoAtual = prompt('Informe o ano atual: ');    
+            console.log(anoAtual);       
+        } while (anoAtual=null || anoAtual<=0);
+
+        do {
+            anoNasc = prompt('Informe o ano do seu nascimento: '); 
+            console.log(anoNasc);           
+        } while (anoNasc=null || anoNasc<=0);
+
+       var calc = anoAtual - anoNasc
+       console.log(calc);
+       if (calc>0) {
+        alert('A idade final é: '+calc);
+       }
+       else{
+        alert('Idade inválida!');
+       }
+       
+    </script>
+</body>
+</html>
