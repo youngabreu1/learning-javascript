@@ -3,6 +3,8 @@
 
     <body>
         <script>
+            
+            //funções e instâncias
 
             /*function Pessoa(){
                 this.nome = "gabreu";
@@ -16,18 +18,28 @@
             pessoa2.cargo = "estudante";
             alert(pessoa2.nome);
             */
+
+          //Praticando a orientação a objetos
+
            function Pessoa(){
             this.nome = "gabreu";
             this.idade = "20";
             this.printNome = function(numero){
                 alert(numero);
             }
+            this.returnAnimal = function(animal){
+                return animal;
+            }
            }
-           var pessoa = new Pessoa();
-           var pessoa_2 = new Pessoa();
-           pessoa_2.nome = "Joao";
-
-           pessoa.printNome(pessoa_2.nome);
+           function Animal(){
+            this.nome = 'cachorrrrro';
+            this.raca = 'puddle';
+           }
+        animal = new Animal();
+        pessoa = new Pessoa();
+        animal.raca = 'peludos'
+        alert(pessoa.returnAnimal(animal).raca);
+          
         </script>
     </body>
 </html>
