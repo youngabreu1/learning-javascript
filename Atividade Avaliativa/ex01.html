@@ -1,0 +1,22 @@
+
+<html>
+<head>
+    
+</head>
+<body>
+        <script>
+            /*Construa um programa em Javascript que, tendo como dados de entrada dois pontos 
+quaisquer no plano, P (x1, y1) e P (x2, y2), escreva a distância entre eles. A fórmula que 
+efetua tal cálculo é:*/
+            var x1 = parseInt(prompt('Insira o valor de x1: '));
+            var x2 = parseInt(prompt('Insira o valor de x2: '));
+            var y1 = parseInt(prompt('Insira o valor de y1: '));
+            var y2 = parseInt(prompt('Insira o valor de y2: '));
+            var quadrado1 = Math.pow((x2-x1), 2);
+            var quadrado2 = Math.pow((y2-y1), 2);
+            var raiz = Math.sqrt(quadrado1 + quadrado2);
+            alert('A distância é: '+raiz.toFixed(2));
+        </script>
+    
+</body>
+</html>

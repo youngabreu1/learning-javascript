@@ -1,0 +1,17 @@
+<script>
+        /*Calcule a média aritmética das 3 notas de um aluno e mostre, além do valor da média, 
+uma mensagem de "Aprovado", caso a média seja igual ou superior a 6, ou a mensagem 
+"Reprovado", caso contrário.
+*/
+        var n1 = parseInt(prompt('Informe a nota 1: '));
+        var n2 = parseInt(prompt('Informe a nota 2: '));
+        var n3 = parseInt(prompt('Informe a nota 3: '));
+        var media = (n1+n2+n3)/3;
+        alert('A média das notas foi:' + media.toFixed(1));
+        if (media>=6){
+            alert('Aprovado!!');
+        }
+        else{
+            alert('Reprovado!!');
+        }
+</script>

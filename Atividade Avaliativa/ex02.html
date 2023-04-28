@@ -1,0 +1,10 @@
+<script>
+    /*2. Faça um programa em Javascript que leia o tempo de duração de um e vento em uma 
+fábrica expressa em segundos e mostre-o expresso em horas, minutos e segundos.
+*/
+        var tempVento = parseInt(prompt('Informe o tempo do vento em segundos: '));
+        var horas = Math.floor(tempVento/3600);
+        var min = Math.floor((tempVento%3600)/60);
+        var seg = tempVento%60;
+        alert(horas+'h'+min+'m'+seg+'s');
+</script>
